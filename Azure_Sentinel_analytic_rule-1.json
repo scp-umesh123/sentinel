@@ -17,7 +17,7 @@
                 "displayName": "Configuration changes to network devices - TruGreen Rule 4 - DP - GBB Analytic",
                 "description": "provides low level alert if config changes are made on the ASA firewall",
                 "severity": "Informational",
-                "enabled": false,
+                "enabled": true,
                 "query": "CommonSecurityLog\n| where DeviceProduct == \"ASA\"\n| where DeviceEventClassID in (\"111010\",\"111008\")\n\n",
                 "queryFrequency": "PT4H",
                 "queryPeriod": "PT4H",
